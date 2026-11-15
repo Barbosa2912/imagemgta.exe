@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="nome">Lucia</p>
+    <img class="personagem" src="img/lucia.png">
+
+    <div class="texto">
+        <p class="selecionar">Selecione o Seu Personagem</p>
+        <h1>Não é Só <br> um Jogo.</h1>
+        <p class="texto-apoio">Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma.</p>
+    </div>
+
+    <div class="menu">
+
+        <img onclick="escolherPersonagem('Lucia', 'img/lucia.png', '#ff3cac')" class="avatar" src="img/lucia.png">
+
+        <img onclick="escolherPersonagem('Jason', 'img/jason.png', '#00b2c9')" class="avatar" src="img/jason.png">
+
+        <img onclick="escolherPersonagem('CJ', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
+
+        <label class="voce">📷
+            <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+        </label>
+    </div>
+
+</body>
+
+<script src=" https://js.puter.com/v2/ "></script>
+<script src="scripts.js">
+
+</script>
+
+</html>
